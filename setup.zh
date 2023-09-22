@@ -1,0 +1,49 @@
+#!/bin/zsh
+
+# Check if Git is installed
+if ! command -v git &> /dev/null; then
+	echo "No git. Installing Git.."
+	# Install Git
+	sudo apt update
+	sudo apt install git
+	echo "Git has been installed"
+else
+	git_version=$(git --version | awk '{print $3}')
+	echo "git  : $git_version"
+fi
+
+# Check if curl is installed
+if ! command -v curl &> /dev/null; then
+	echo "curl is not installed. Installing curl..."
+        sudo apt update
+        sudo apt install curl
+        echo "curl has been installed."
+else
+	curl_version=$(curl --version | awk '{print $2}' | head -1)
+    	echo "curl : $curl_version"
+fi
+
+# Check zsh
+if ! command -v zsh &> /dev/null; then
+	echo "No zsh. Installing zsh..."
+	# Install zsh
+	sudo apt install zsh
+	echo "zsh has been installed"
+	zsh
+	sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+else
+	zsh_version=$(zsh --version | awk '{print $2}')
+	echo "zsh  :  $zsh_version"
+fi
+
+# Check if nvim is installed
+if ! command -v nvim &> /dev/null; then
+        echo "No. Installing Neovim..."
+        sudo apt update
+        sudo apt install neovim
+	echo "Neovim (nvim) has been installed."
+else
+        nvim_version=$(nvim --version | awk '{print $2}' | head -1)
+	echo "nvim : $nvim_version"
+fi
+
