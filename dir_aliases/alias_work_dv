@@ -1,0 +1,24 @@
+# edit
+alias eadeeep="nano ~/.dir_aliases/alias_work_dv"
+# color
+G='\033[0;32m'        # Green
+Y='\033[1;33m'        # Yellow
+
+# open work directory
+alias code="cd ~/code"
+alias api="cd ~/code/api"
+alias web="cd ~/code/web"
+alias libs="cd ~/code/libs"
+
+# work with Docker
+alias docdb="echo -ne -e '${Y}docker DB \n\r' && sleep 1 && docker start envmgr_db && echo -e '${G}Done'"
+
+# NPM link
+alias lcomp="cd ~/code/libs/dv-connect-components && npm link && cd -"
+alias llp="cd ~/code/libs/lp-components && npm link && cd -"
+
+# get env for projects
+alias getenvu="cd ~/code/env/ && pbcopy < env-web.txt && cd -"
+alias getenva="cd ~/code/env/ && pbcopy < env-api.env && cd -"
+
+

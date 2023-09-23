@@ -1,0 +1,21 @@
+# edit this file
+alias eavim="nvim ~/.dir_aliases/alias_vim"
+
+# NVIM
+alias n="nvim"
+# OPEN PROJECT
+alias nd="nvim ."
+
+# edit vim settings 
+alias vimdot="sudo vim ~/.vimrc"
+
+# folder with vim text highlight
+alias vimcolors="cd /usr/share/vim/vim*/colors/"
+
+# TRICKS
+## Split mode - sv
+## change window in split mode 
+
+# PLUGINS
+alias vimplug="nvim /Users/ddneliuk/.local/share/nvim/plugged/vim-airline"
+

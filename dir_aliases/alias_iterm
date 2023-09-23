@@ -1,0 +1,5 @@
+#edit 
+alias eaiterm="nano ~/.dir_aliases/alias_iterm"
+#welcome mess in iterm
+alias itermwel="sudo nvim /etc/motd"
+

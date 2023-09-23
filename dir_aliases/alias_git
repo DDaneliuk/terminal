@@ -1,0 +1,26 @@
+# edit git alias file
+alias eagit="nvim ~/.dir_aliases/alias_git"
+alias eacatgit="cat ~/.dir_aliases/alias_git"
+alias gs="git status -s"
+alias gss="lazygit"
+alias gch="git checkout"
+
+# ROLLBACK
+alias gback="git checkout -- ."
+
+# STASH
+alias gst="git stash push -m "
+alias gsha="git stash apply stash "
+alias gshd="git stash show -p "
+alias gshl="git stash list"
+# clear stash list
+alias gsc="git stash clear && echo 'clearing stash list'"	
+
+# LOG
+alias gdp="git log -p -2" 
+
+# REVERT && DELETE COMMIT
+# >>> git revert commit
+# >>> git reset --soft HEAD~1
+# >>> git push origin +branch --force
+

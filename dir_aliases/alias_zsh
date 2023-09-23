@@ -1,0 +1,43 @@
+# EDIT
+alias eazsh="nano ~/.dir_aliases/alias_zsh"
+# EDIT welcome 
+alias eawel"sudo nano /etc/motd"
+# format text - grep
+alias grep="grep --color=always"
+
+# get count of files
+alias count="ls | wc -l"
+
+# USE: copy - [pbcopy < file.txt]
+# USE: paste - [pbpaste]
+# USE: copy dir - cp -R <currdir> <newdir>
+# USE: copy a few files like range from 2000-2100: cp 2{000..100}.png /dir 
+alias pc="pbcopy"
+# TRICKS
+# say - Siri start saying smth that u wish
+# find wifi pass - security find-generic-password -wa "DI5"
+# df -h - space in u drive
+alias weather="curl wttr.in/kiev"
+
+# ROUTER
+alias nft="cd ~/code/nft"
+alias bash="cd ~/code/bash"
+alias server="cd ~/code/server"
+alias easerver="cd ~/code/server && nano config"
+alias crack="cd ~/code/crack"
+
+# SSH
+alias gessh="ssh-keygen -t rsa"
+alias getssh="pbcopy < ~/.ssh/id_rsa.pub"
+alias eassh="cd ~/.ssh/ && nano config"
+
+# GLOBAL PERSONAL SCRIPTS
+# lib-reset - reset github branch and update it 
+alias eslib="sudo nano /usr/local/bin/lib-reset.zh"
+
+# NMAP
+alias nport="sudo nmap -O"
+alias nmain="sudo nmap -sV"
+
+# ADD SCRIPT - Change node version 
+n

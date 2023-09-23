@@ -1,0 +1,8 @@
+# EDIT
+alias eanpm="nano ~/.dir_aliases/alias_npm"
+
+# NPM check links
+alias links="npm ls -g --depth=0 --link=true"
+
+# LOGIN
+alias npmlogin="npm login --scope=@deeepvision --registry=https://npm.pkg.github.com"
