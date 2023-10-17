@@ -1,0 +1,6 @@
+curl
+git
+zsh
+nvim
+python3
+nohup
